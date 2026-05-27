@@ -1,0 +1,39 @@
+{
+  "model_type": "2D axisymmetric finite-element screening model, linear elastic stress solve over forming stages",
+  "production_warning": "This is a real finite-element stiffness solve for each stage, but it is not a full nonlinear large-strain elastoplastic contact forming simulation. Use Abaqus/DEFORM/Forge/Simufact for production FEA.",
+  "collar": {
+    "pin_nominal_mm": 8.0,
+    "finished_OD_target_mm": 10.25,
+    "finished_OD_max_J_mm": 10.31,
+    "finished_length_target_mm": 8.06,
+    "finished_length_max_K_mm": 8.13,
+    "functional_bore_target_mm": 8.5,
+    "functional_bore_reason": "Rectified to user's Punch IV sketch; Ø7.80/7.75 nose treated as lead/relief, not final through-bore.",
+    "raw_stock_dia_mm": 11.8
+  },
+  "tooling": {
+    "die_IV_land_dia_mm": 10.25,
+    "die_IV_land_length_mm": 8.06,
+    "punch_IV_working_dia_mm": 8.5,
+    "punch_IV_nose_lead_dia_mm": 7.8,
+    "KO_pin_IV_face_dia_mm": 8.4,
+    "KO_pin_clearance_note": "KO pin face is kept below Ø8.50 final bore to eject without sizing the ID."
+  },
+  "material": {
+    "name": "low-carbon steel, 0.15%C max",
+    "E_MPa": 210000.0,
+    "nu": 0.3,
+    "yield_assumed_MPa": 280.0
+  },
+  "loading": {
+    "final_die_outer_pressure_MPa": 420.0,
+    "final_punch_inner_pressure_MPa": 300.0,
+    "final_axial_forming_pressure_MPa": 360.0,
+    "friction_assumed": 0.08
+  },
+  "volume_screen": {
+    "finished_ring_volume_mm3": 207.793,
+    "equiv_stock_length_without_scrap_mm": 1.901,
+    "note": "Actual cut-off must include pierce slug, flash/trim, and forming losses."
+  }
+}
