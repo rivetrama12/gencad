@@ -1,0 +1,5 @@
+stage,name,length,OD,ID,target
+1,Upset preform,3.10,11.55,2.00,Create centered preform; no final sizing.
+2,Backward extrusion,5.20,10.95,5.90,Open bore and form wall; avoid lap at die entry.
+3,Semi-finish,7.15,10.55,7.80,Prepare final contour; leave stock for final calibration.
+4,Final calibration,8.06,10.25,8.50,Output collar within OD/length limits and bore clearance.
